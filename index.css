@@ -1,0 +1,126 @@
+body{
+    background-image: linear-gradient(to left , lightcoral, cornflowerblue);
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 7px;
+    border-bottom: 1px double black;
+    background-image: linear-gradient(to left , lightcoral, cornflowerblue);
+}
+.titulo{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 60px;
+    margin: 7px 0;
+    text-align: center;
+
+}
+.subtitulo{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 25px;
+    text-align: center;
+}
+.redes{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 8px;
+    margin-right: 8px;
+}
+.logo{
+    margin: 5px;
+}
+.img{
+    width: 100px;
+    margin: 5px  0 0 5px;
+}
+#contenedor{
+    width: 85%;
+    margin: 50px auto;
+    height: 500px;
+    display: flex;
+    padding: 20px;
+    background: rgba(255,255,255,.1);
+    gap: 50px;
+}
+.frase{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+#teclado{
+    display: block;
+    align-content: space-around;
+}
+#palabra{
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+#palabra span{
+    vertical-align: bottom;
+    border-bottom: 2px solid black;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 35px;
+    text-align: center;
+    margin-right: 8px;
+    display: inline-block;
+    width: 35px;
+    margin-bottom: 25px;
+    margin-top: 15px;
+}
+.botones{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+#btnJugar{
+    height: 50px;
+    width: 150px;
+    margin: 30px ;
+    text-transform: uppercase;
+}
+#btnDesistir{
+    height: 50px;
+    width: 150px;
+    margin: 30px ;
+    text-transform: uppercase;
+}
+.boton{
+    border: 2px double white;
+    background: transparent;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 2px 2px 10px 0 #fff; ;
+}
+.letrita{
+    width: 60%;
+    margin: auto;
+
+}
+#letras{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+#resultado{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 5px yellow;
+}
+#letras button{
+    width: 35px;
+    font-size: 25px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    border-radius: 5px;
+    text-transform: uppercase;
+    background-color: antiquewhite;
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+    
+}
