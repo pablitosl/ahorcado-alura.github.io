@@ -64,12 +64,18 @@ function clickLetras(event){
         imagen.src=source;
     }
     if(letraErrada == 6){
-        resultado = document.getElementById('resultado');
-        resultado.innerHTML = "Perdiste, el equipo era " + palabrita;
+        Swal.fire(
+            'Perdiste',
+            `El equipo era ${palabrita}`,
+            'error'
+          )
         gameOver();
     }else if(letraAcertada == palabrita.length){
-        resultado = document.getElementById('resultado');
-        resultado.innerHTML = "GANASTE !!!" 
+        Swal.fire(
+            'Felicidades!',
+            'Ganaste !',
+            'success'
+          )
         gameOver();
     }
     
