@@ -68,14 +68,14 @@ function clickLetras(event){
             'Perdiste',
             `El equipo era ${palabrita}`,
             'error'
-          )
+          );
         gameOver();
     }else if(letraAcertada == palabrita.length){
         Swal.fire(
             'Felicidades!',
             'Ganaste !',
             'success'
-          )
+          );
         gameOver();
     }
     
