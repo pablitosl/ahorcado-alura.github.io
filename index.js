@@ -64,6 +64,7 @@ function clickLetras(event){
         imagen.src=source;
     }
     if(letraErrada == 6){
+        resultado = document.getElementById('resultado');
         Swal.fire(
             'Perdiste',
             `El equipo era ${palabrita}`,
@@ -71,6 +72,7 @@ function clickLetras(event){
           );
         gameOver();
     }else if(letraAcertada == palabrita.length){
+        resultado = document.getElementById('resultado');
         Swal.fire(
             'Felicidades!',
             'Ganaste !',
