@@ -43,7 +43,6 @@ header{
     display: flex;
     padding: 20px;
     background: rgba(255,255,255,.1);
-    gap: 50px;
 }
 #ahorcado{
     height: 500px;
@@ -142,6 +141,7 @@ header{
         height: 90%;
         margin: 20px auto;
         display:block;
+        padding: 0;
     }
     #ahorcado{
         height: 400px;
@@ -154,7 +154,14 @@ header{
 @media screen and (max-width:580px){
     header{
         width:100%;
-        justify-content: flex-start;
+        justify-content: center;
+    }
+    .alura{
+        display: none;
+    }
+    #palabra span{
+        margin-bottom: 20px;
+        margin-top: 10px;
     }
     .img{
         width: 80px;
