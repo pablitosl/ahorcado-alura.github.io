@@ -44,6 +44,9 @@ header{
     background: rgba(255,255,255,.1);
     gap: 50px;
 }
+#ahorcado{
+    height: 500px;
+}
 .frase{
     display: flex;
     text-align: center;
@@ -130,4 +133,37 @@ header{
 #letras button:hover{
     background-color: white;
     border-color: grey;
+}
+
+@media screen and (max-width:1100px){
+    #contenedor{
+        width: 95%;
+        height: 90%;
+        margin: 20px auto;
+        display:block;
+    }
+    #ahorcado{
+        height: 400px;
+        margin: auto;
+    }
+    .foto{
+        text-align: center;
+    }
+}
+@media screen and (max-width:580px){
+    .titulo{
+        font-size: 50px;
+        margin: 5px 0;
+    }
+    .subtitulo{
+        font-size: 20px;
+    }
+    .redes{
+        font-size: 18px;
+    }
+    #ahorcado{
+        height: 350px;
+        margin: auto;
+    }
+
 }
