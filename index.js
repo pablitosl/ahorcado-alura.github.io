@@ -1,9 +1,8 @@
 let palabrita;
 let letraErrada = 0;
 let letraAcertada = 0;  
-const equipos = ['river', 'boca', 'racing', 'estudiantes', 'independiente', 'tigre', 'talleres',
-     'huracan', 'patronato', 'velez', 'colon', 'arsenal', 'lanus', 'banfield', 'sanlorenzo', 'platense',
-    'union', 'argentinos', 'sarmiento', 'aldosivi', 'belgrano', 'godoycruz', 'gimnasia', 'newells', 'central'];
+const paises = ['argentina', 'bolivia', 'brasil', 'chile', 'colombia', 'costarica', 'cuba',' ecuador', 'elsalvador', 'guatemala', 
+    'honduras', 'mexico', 'nicaragua', 'panama', 'paraguay', 'peru', 'puertorico', 'uruguay', 'venezuela', 'dominicana'];
 
 const btnIniciar = document.getElementById('btnJugar') ;
 const imagen = document.getElementById('ahorcado');
@@ -22,9 +21,9 @@ function iniciar(event) {
 
     const parrafo = document.getElementById('palabra');
     parrafo.innerHTML = '';
-    const palabras = equipos.length;
+    const palabras = paises.length;
     const random = Math.floor(Math.random()* palabras);
-    palabrita = equipos [random];
+    palabrita = paises [random];
     const letras = palabrita.length;
 
     for(let i = 0; i< btnLetra.length ; i++){
@@ -67,7 +66,7 @@ function clickLetras(event){
         resultado = document.getElementById('resultado');
         Swal.fire(
             'Perdiste',
-            `El equipo era ${palabrita}`,
+            `El pais era ${palabrita}`,
             'error'
           );
         gameOver();
