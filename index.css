@@ -78,18 +78,17 @@ header{
 .botones{
     display: flex;
     text-align: center;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 #btnJugar{
     height: 50px;
     width: 150px;
-    margin: 30px ;
     text-transform: uppercase;
 }
 #btnDesistir{
     height: 50px;
     width: 150px;
-    margin: 30px ;
+    
     text-transform: uppercase;
 }
 .boton{
@@ -99,6 +98,7 @@ header{
     font-weight: bold;
     box-shadow: 2px 2px 10px 0 #fff;
     cursor: pointer;
+    text-transform: uppercase;
 }
 .boton:hover{
     transform: scale(1.1);
@@ -188,4 +188,154 @@ header{
         margin: auto;
     }
 
+}
+.contenedorWord{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    margin: 50px auto;
+    height: 500px;
+    padding: 20px;
+    background: rgba(255,255,255,.1);
+    
+}
+.contenedorWord h2{
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 100px;
+}
+/* From uiverse.io by @Yaseen549 */
+.input {
+    background-color: #212121;
+    width: 50%;
+    height: 50px;
+    padding: 10px;
+    text-align: center; 
+    border: 2px solid white;
+    border-radius: 5px;
+     box-shadow: 3px 3px 2px rgb(255, 255, 255); 
+    font-size: 1.5rem;
+    color: white;
+    margin: 20px;
+  }
+  
+  .input:focus {
+    color: rgb(100, 155, 255);
+    background-color: #212121;
+    outline-color: rgb(100, 155, 255);
+    box-shadow: -1px -1px 20px rgb(150, 155, 255);
+    transition: .1s;
+    transition-property: box-shadow;
+  }
+
+/* From uiverse.io by @mrhyddenn */
+.icon-btn {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #cdcdcd;
+    background: white;
+    border-radius: 25px;
+    overflow: hidden;
+    position: relative;
+    transition: width 0.2s ease-in-out;
+    font-weight: 500;
+    font-family: inherit;
+    font-size: 1.4rem;
+  }
+  
+  .add-btn:hover {
+    width: 150px;
+  }
+  
+  .add-btn::before,
+  .add-btn::after {
+    transition: width 0.2s ease-in-out, border-radius 0.2s ease-in-out;
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 10px;
+    top: calc(50% - 2px);
+    background: rgb(100, 155, 255);
+  }
+  
+  .add-btn::after {
+    right: 14px;
+    overflow: hidden;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+  }
+  
+  .add-btn::before {
+    left: 14px;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+  }
+  
+  .icon-btn:focus {
+    outline: none;
+  }
+  
+  .btn-txt {
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+  
+  .add-btn:hover::before,
+  .add-btn:hover::after {
+    width: 4px;
+    border-radius: 2px;
+  }
+  
+  .add-btn:hover .btn-txt {
+    opacity: 1;
+  }
+  
+  .add-icon::after,
+  .add-icon::before {
+    transition: all 0.2s ease-in-out;
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 2px;
+    top: calc(50% - 10px);
+    background: rgb(100, 155, 255);
+    overflow: hidden;
+  }
+  
+  .add-icon::before {
+    left: 22px;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+  }
+  
+  .add-icon::after {
+    right: 22px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+  }
+  
+  .add-btn:hover .add-icon::before {
+    left: 15px;
+    height: 4px;
+    top: calc(50% - 2px);
+  }
+  
+  .add-btn:hover .add-icon::after {
+    right: 15px;
+    height: 4px;
+    top: calc(50% - 2px);
+  }
+.btnHome{
+    padding: 20px 50px;
+    font-size: 2rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-radius: 20px;
+    background: steelblue;
+    font-weight: 400;
+    margin-top: 15px;
+    color: white;
+    border: 1px solid white;
 }
