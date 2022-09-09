@@ -68,7 +68,7 @@ function clickLetras(event){
             'Perdiste',
             `El pais era ${palabrita}`,
             'error'
-          );
+        );
         gameOver();
     }else if(letraAcertada == palabrita.length){
         resultado = document.getElementById('resultado');
@@ -76,7 +76,7 @@ function clickLetras(event){
             'Felicidades!',
             'Ganaste !',
             'success'
-          );
+        );
         gameOver();
     }
     
@@ -88,7 +88,17 @@ function gameOver(){
     btnIniciar.disabled = false;
 }
 
-
-    
-
 gameOver();
+
+//Agregar palabras en el array paises
+const btnAdd = document.getElementById('btnAdd');
+
+btnAdd.addEventListener('click', () => {
+    const input = document.getElementById('recipient-name');
+    const pais = input.value;
+    paises.push(pais);
+    input.value = '';
+    console.log(paises);
+});
+
+
